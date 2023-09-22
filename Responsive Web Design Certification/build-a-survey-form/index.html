@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Build a survey form</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div id="introduccion">
+            <h1 id="title">Yermanama Survey Form</h1>
+        </div>
+        <div class="formulario">
+            <p id="description">Esto es una breve explicación que se me pide en el ejercicio</p>
+            <form action="post" id="survey-form">
+                <fieldset>
+                    <h3>Por favor, introduce tus datos básicos</h3>
+                    <div>
+                        <label for="name" id="name-label">Name: </label><input type="text" id="name" required placeholder="Escribe tu nombre aquí...">
+                    </div>
+                    <div>
+                        <label for="email" id="email-label">Email: </label><input type="email" id="email" required placeholder="Escribe tu correo aquí...">
+                    </div>
+                    <div>
+                        <label for="number" id="number-label">Age: </label><input type="number" id="number" min="12" max="120" placeholder="Inserta tu edad aquí...">
+                    </div>
+                </fieldset>
+                <hr>
+                <fieldset>
+                    <h3>Por favor, seleccione un plan</h3>
+                    <div>
+                        <label id="dropdown-label" for="dropdown">Ejemplo de un selector de opciones:
+                            <select name="dropdown" id="dropdown">
+                                <option value="">Selecciona una opción...</option>
+                                <option value="basico">Básico - Acceso limitado (Gratis)</option>
+                                <option value="standard">Estándar - Acceso completo ($9.99/mes)</option>
+                                <option value="premium">Premium - Acceso completo + beneficios adicionales ($19.99/mes)</option>
+                                <option value="familiar">Familiar - Acceso para hasta 5 miembros de la familia ($29.99/mes)</option>
+                            </select>
+                        </label>
+                    </div>
+                </fieldset>
+                <hr>
+                <fieldset>
+                    <h3>Por favor, seleccione su género</h3>
+                    <div>
+                        <label id="masculino-label" for="masculino"><input type="radio" name="genero" id="masculino" value="masculino">Masculino</label>
+                        <label id="femenino-label" for="femenino"><input type="radio" name="genero" id="femenino" value="femenino">Femenino</label>
+                        <label id="otro-label" for="otro"><input type="radio" name="genero" id="otro" value="otro">Otro</label>
+                    </div>
+                </fieldset>
+                <hr>
+                <fieldset>
+                    <h3>Por favor, elija uno de los motivos</h3>
+                    <div>
+                        <label id="motivo1-label" for="motivo1"><input type="checkbox" name="motivo1" id="motivo1" value="aprendizaje">Aprendizaje</label>
+                        <label id="motivo2-label" for="motivo2"><input type="checkbox" name="motivo2" id="motivo2" value="entretenimiento">Entretenimiento</label>
+                        <label id="motivo3-label" for="motivo3"><input type="checkbox" name="motivo3" id="motivo3" value="trabajo">Trabajo</label>
+                    </div>
+                </fieldset>
+                <hr>
+                <fieldset>
+                    <h3>Biografía</h3>
+                    <textarea name="biografia" id="biografia" cols="50" rows="10" placeholder="Introduce una breve biografía sobre tí mismo"></textarea>
+                </fieldset>
+                <button type="submit" id="submit">Enviar</button>
+            </form>
+        </div>
+    </body>
+</html>
