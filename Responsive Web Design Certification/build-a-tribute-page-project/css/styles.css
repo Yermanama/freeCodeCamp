@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300&display=swap');
+
+:root{
+    --text: #161d1b;
+    --background: #fcfdfd;
+    --primary: #9bb5ae;
+    --secondary: #d9e3e0;
+    --accent: #668a80;
+    --roboto-font: 'Martian Mono', monospace
+}
+*{
+    font-family: var(--roboto-font);
+    background-color: var(--secondary);
+}
+h1, h2{
+    text-align: center;
+}
+#img-div{
+    max-width: 100%;
+    width:50%;
+    height: 20%;
+    margin: auto auto 40px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--primary);
+    border-radius: 5px;
+    padding: 10px;
+}
+img{
+    display: block;
+}
+#image{
+    max-width: 100%;
+    margin: auto;
+    display: block;
+    height: auto;
+    border-radius: 5px;
+}
+#img-caption{
+    padding: 5px;
+    margin-top: 15px;
+    font-style: italic;
+    font-size: smaller;
+    text-align: center;
+    background-color: var(--primary);
+    border-radius: 5px;
+}
+
+.bold{
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+ul li{
+    border: 1px solid;
+    padding: 5px;
+    margin: 5px;
+    background-color: var(--accent);
+    list-style: none;
+    border-radius: 5px;
+}
+
+#tribute-info{
+    background-color: var(--secondary);
+}
+
+hr{
+    padding: 5px;
+    margin: 15px auto;
+    border-radius: 5px;
+    background-color: var(--accent);
+}
+
+#tribute-link-div{
+    text-align: center;
+    color: var(--accent);
+}
+
+#tribute-link{
+    color: var(--accent);
+}
