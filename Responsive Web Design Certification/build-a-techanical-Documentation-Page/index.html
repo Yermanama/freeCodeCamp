@@ -1,20 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Build a Technical Documentation Page</title>
+    <title>CodeLang</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
+    <nav id="navbar">
+        <header>CodeLang</header>
+        <a href="#Sintaxis_basica">Sintaxis basica</a>
+        <a href="#Operadores">Operadores</a>
+        <a href="#Control">Control</a>
+        <a href="Funciones">Funciones</a>
+        <a href="Clases_objetos">Clases y Objetos</a>
+    </nav>
     <main id="main-doc">
-        <section class="main-section">
-            <header></header>
+        <section id="Sintaxis_basica" class="main-section">
+            <header>
+                <h2>Sintaxis básica</h2>
+            </header>
+            <p>En Python, la declaración de variables es sencilla. Solo necesitas escribir el nombre de la variable
+                seguido de un signo igual y el valor, como en <code>mi_variable = 10</code>.</p>
+            <p>Los comentarios en Python se crean usando el símbolo de hash (#). Todo texto seguido del símbolo de hash
+                en una línea es considerado un comentario, por ejemplo: <code># Esto es un comentario</code>.</p>
+            <ul>
+                <h4>Otros datos intersantes</h4>
+                <li><code>Indentación:</code> A diferencia de otros lenguajes que utilizan llaves para definir bloques
+                    de código, Python utiliza la indentación. Es crucial mantener una indentación consistente para
+                    evitar errores.</li>
+                <li><code>Listas:</code> Las listas en Python son colecciones ordenadas de elementos que pueden ser de
+                    cualquier tipo, y se crean colocando los elementos (elementos) entre corchetes <code>[]</code>.</li>
+                <li><code>Diccionarios:</code> Los diccionarios son colecciones no ordenadas de pares clave-valor. Se
+                    crean colocando los pares entre llaves <code>{}</code>.</li>
+                <li><code>Importación de Módulos:</code> Python permite importar módulos utilizando la palabra clave
+                    <code>import</code>. Por ejemplo, <code>import math</code> importará el módulo de matemáticas.
+                </li>
+                <li><code>Excepciones:</code> Python maneja errores con excepciones. Un bloque de código que puede
+                    causar un error se coloca dentro de un bloque <code>try</code>, y el manejo del error se coloca
+                    dentro de un bloque <code>except</code>.</li>
+            </ul>
         </section>
-        <section class="main-section"></section>
-        <section class="main-section"></section>
-        <section class="main-section"></section>
-        <section class="main-section"></section>
+        <section id="Operadores" class="main-section">
+            <header>
+                <h2>Operadores</h2>
+            </header>
+            <p>Python soporta una variedad de operadores aritméticos como la suma (<code>+</code>), la resta
+                (<code>-</code>), la multiplicación (<code>*</code>) y la división (<code>/</code>).</p>
+            <p>Los operadores de comparación en Python incluyen igual a (<code>==</code>), diferente de
+                (<code>!=</code>), mayor que (<code>></code>), menor que (<code><</code>), mayor o igual que
+                (<code>>=</code>), y menor o igual que (<code><=</code>).</p>
+        </section>
+        <section id="Control" class="main-section">
+            <header>
+                <h2>Control de flujo</h2>
+            </header>
+            <p>La estructura de control <code>if</code> en Python permite ejecutar bloques de código condicionalmente.
+                Por ejemplo: <code>if mi_variable > 10: print("Mayor que 10")</code>.</p>
+            <p>Python también ofrece estructuras de control de flujo como <code>for</code> y <code>while</code> para
+                iteraciones. Por ejemplo: <code>for i in range(5): print(i)</code>.</p>
+        </section>
+        <section id="Funciones" class="main-section">
+            <header>
+                <h2>Funciones</h2>
+            </header>
+            <p>En Python, puedes definir funciones usando la palabra clave <code>def</code>, seguida del nombre de la
+                función y paréntesis. Por ejemplo: <code>def mi_funcion():</code>.</p>
+            <p>Las funciones pueden recibir argumentos y retornar valores usando la palabra clave <code>return</code>.
+                Por ejemplo: <code>def suma(a, b): return a + b</code>.</p>
+        </section>
+        <section id="Clases_objetos" class="main-section">
+            <header>
+                <h2>Clases y Objetos</h2>
+            </header>
+            <p>En Python, las clases se definen usando la palabra clave <code>class</code>, seguida del nombre de la
+                clase. Por ejemplo: <code>class MiClase:</code>.</p>
+            <p>Los objetos son instancias de clases, y puedes crear un objeto de una clase simplemente llamando a la
+                clase como una función. Por ejemplo: <code>mi_objeto = MiClase()</code>.</p>
+        </section>
     </main>
 </body>
+
 </html>
