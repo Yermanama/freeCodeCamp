@@ -1,5 +1,15 @@
+:root{
+    /* CSS HEX */
+    --timberwolf: #e2dadbff;
+    --platinum: #dae2dfff;
+    --ash-gray: #a2a7a5ff;
+    --dim-gray: #6d696aff;
+    --white: #ffffffff;
+}
+
 body{
     display: flex;
+    background-color: var(--platinum); /* background-color asignado */
 }
 
 #navbar{
@@ -11,11 +21,69 @@ body{
     width: 10%;
     height: 100%;
     overflow-y: auto;
+    background-color: var(--ash-gray); /* background-color asignado */
+}
+
+#navbar a{
+    text-decoration: none;
+    color: var(--dim-gray); /* color de texto asignado */
 }
 
 #main-doc{
     margin-left: 10%;
-    padding: 20px;
+    padding: 5px;
     overflow-y: auto;
     width: 90%;
+    background-color: var(--timberwolf); /* background-color asignado */
+}
+
+code{
+    font-family: monospace;
+    background-color: var(--white); /* background-color asignado */
+    padding: 0.3em;
+    letter-spacing: -0.05em;
+    word-break: normal;
+    border-radius: 5px;
+}
+
+#navbar, .main-section > header{
+    background-color: var(--ash-gray); /* background-color reasignado */
+}
+
+.main-section{
+    background-color: var(--white); /* background-color asignado */
+}
+
+.main-section h2{
+    color: var(--dim-gray);
+    padding: 10px; /* color de texto asignado */
+}
+
+.main-section p, .main-section ul, .main-section ul, .main-section li{
+    color: var(--dim-gray);
+    padding: 10px;
+    list-style: none; /* color de texto asignado */
+}
+
+a, .main-section code{
+    color: var(--dim-gray); /* color de texto asignado */
+}
+
+@media (max-width: 600px){
+    #navbar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 100%;
+    }
+    #nav-toggle{
+        display: none; /* Ocultar el botón de alternar en dispositivos móviles */
+    }
+}
+
+@media (max-width: 600px){
+    body{
+        background-color: red;
+    }
 }
